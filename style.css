@@ -1,0 +1,137 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #073b4c;
+}
+
+body .start {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 10%;
+  -webkit-box-shadow: 0px 0px 100px #ffd166;
+          box-shadow: 0px 0px 100px #ffd166;
+}
+
+body .start p {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+body .start.clear {
+  display: none;
+}
+
+body .birthdayCard {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(2500px);
+          transform: perspective(2500px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .birthdayCard.clear {
+  opacity: 0;
+}
+
+body .birthdayCard:hover {
+  -webkit-transform: perspective(2500px) rotate(5deg);
+          transform: perspective(2500px) rotate(5deg);
+  -webkit-box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 0 10px 100px rgba(0, 0, 0, 0.5);
+}
+
+body .birthdayCard:hover .cardFront {
+  -webkit-transform: rotateY(-160deg);
+          transform: rotateY(-160deg);
+}
+
+body .birthdayCard:hover .happy {
+  visibility: hidden;
+}
+
+body .birthdayCard .cardFront {
+  position: relative;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 30px 0 50px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2), 30px 0 50px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body .birthdayCard .cardFront .happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+body .birthdayCard .title-image {
+  position: absolute;
+}
+
+body .birthdayCard .cardInside {
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  -webkit-box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
+}
+
+body p {
+  font-family: "Brush Script MT", cursive;
+  margin: 10px 40px 30px 40px;
+  color: #333;
+}
+
+body .name {
+  position: absolute;
+  left: 150px;
+  top: 200px;
+  color: #333;
+}
+
+body .back {
+  font-family: Tahoma, sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 30px;
+  outline-color: #333;
+  outline-style: dotted;
+}
+
+body .audio {
+  width: 70%;
+  margin: 0 auto;
+}
+
+body .audio audio {
+  width: 100%;
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
